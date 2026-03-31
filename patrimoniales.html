@@ -2,38 +2,102 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>En construcción</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos Patrimoniales</title>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f172a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
+
+.project-gallery{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
 }
-.container {
-    max-width: 500px;
+
+.project-gallery img{
+  width:48%;
+  height:auto;
+  border-radius:12px;
 }
-h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+
+body{
+  margin:0;
+  font-family:'Segoe UI', sans-serif;
+  background:#f7f8fa;
+  padding:60px 8%;
 }
-p {
-    font-size: 18px;
-    color: #cbd5e1;
+
+.contenedor{
+  max-width:1000px;
+  margin:auto;
+  background:white;
+  padding:40px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom:40px;
 }
+
 </style>
 </head>
 
-<body>
-<div class="container">
-    <h1>En construcción 🚧</h1>
-    <p>Estamos desarrollando esta sección para mostrar nuevos proyectos.</p>
-    <p>Muy pronto disponible.</p>
+<body class="patrimoniales">
+
+
+<!-- ================= PROYECTO 1 ================= -->
+<div class="contenedor">
+  <h1>Teatro Colegio José Julián Andrade</h1>
+
+  <p class="ubicacion">📍 San Gabriel – Carchi, Ecuador</p>
+  <p><strong>Estado:</strong> Consultoría de Diseño Arquitectónico e Ingenierías</p>
+  <p><strong>Año:</strong> 2018</p>
+
+  <p>
+    Este proyecto se enfocó en elaborar una propuesta arquitectónica y de ingenierías completa, abarcando todos los detalles para rehabilitar este teatro a nivel formal. Por ser un espacio de poco más de 400 m², se optó por mejorar con materialidad, calidad de mobiliario y equipamiento básico como tramoyas, para que fuera la base de una puesta en marcha y diversificar sus usos tanto para el colegio como para la ciudad.
+  </p>
+
+  <div class="project-gallery">
+    <img src="assets/img/diseno-teatro-1.jpg">
+    <img src="assets/img/diseno-teatro-2.jpg">
+  </div>
 </div>
+
+
+<!-- ================= PROYECTO 2 ================= -->
+<div class="contenedor">
+  <h1>Museo de las Artesanías</h1>
+
+  <p class="ubicacion">📍 San Gabriel – Carchi, Ecuador</p>
+  <p><strong>Estado:</strong> Restauración y Rehabilitación Patrimonial</p>
+  <p><strong>Año:</strong> 2015</p>
+
+  <p>
+    Intervención de 2 casas patrimoniales que abarcan 330 m², las cuales se unen para formar el Museo de las Artesanías, integrando espacios de exposición y áreas abiertas para eventos.
+  </p>
+
+  <div class="project-gallery">
+    <img src="assets/img/museo-artesanias-1.jpg" class="img-vertical">
+    <img src="assets/img/museo-artesania-2.jpg">
+  </div>
+</div>
+
+
+<!-- ================= PROYECTO 3 ================= -->
+<div class="contenedor">
+  <h1>Proyecto Recoleta</h1>
+
+  <p class="ubicacion">📍 Centro Histórico de Quito – Ecuador</p>
+  <p><strong>Estado:</strong> Diseño Arquitectónico - Intervención Patrimonial</p>
+  <p><strong>Año:</strong> 2010</p>
+
+  <p>
+    Intervención en inmueble patrimonial ubicado en el centro histórico de Quito, adaptando el espacio a nuevas unidades habitacionales sin perder su valor histórico y arquitectónico.
+  </p>
+
+  <div class="project-gallery">
+    <img src="assets/img/proyecto-recoleta-1.jpg">
+    <img src="assets/img/proyecto-recoleta-2.jpg">
+  </div>
+</div>
+
 </body>
-</html>
