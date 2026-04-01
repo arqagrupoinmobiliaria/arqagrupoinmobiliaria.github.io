@@ -148,9 +148,33 @@ const I18N = {
     line_pat_title: "Proyectos Patrimoniales",
     line_pat_text: "Puesta en valor de activos históricos con criterio técnico y coherencia urbana.",
     line_cta: "Explorar proyectos",
+    
+patrimoniales_proj1_title: "Teatro Colegio José Julián Andrade",
+patrimoniales_proj1_location: "📍 San Gabriel - Carchi, Ecuador",
+patrimoniales_proj1_status_label: "Estado:",
+patrimoniales_proj1_status: "Consultoría de Diseño Arquitectónico e Ingenierías",
+patrimoniales_proj1_year_label: "Año:",
+patrimoniales_proj1_year: "2018",
+patrimoniales_proj1_desc: "Este proyecto se enfocó en elaborar una propuesta arquitectónica y de ingenierías completa, abarcando todos los detalles para rehabilitar este teatro a nivel general. Por ser un espacio de uso público se optó por mejorar con materialidad, calidad de mobiliario y equipamiento básico como tramoyas, para que fuera la base de una puesta en marcha y diversificar sus usos tanto para el colegio como para la ciudad. La propuesta acústica se nota en cada detalle como los forramientos en paredes, butacas, pisos, cielos rasos, etc. La iluminación es otro punto importante que se instauró como elemento básico de confort, el cual en la actualidad no tiene en absoluto.",
 
-    line_pat_text: "Puesta en valor de activos históricos con criterio técnico y coherencia urbana.",
-line_cta: "Explorar proyectos",
+patrimoniales_proj2_title: "Museo de las Artesanías",
+patrimoniales_proj2_location: "📍 San Gabriel - Carchi, Ecuador",
+patrimoniales_proj2_status_label: "Estado:",
+patrimoniales_proj2_status: "Restauración y Rehabilitación Patrimonial",
+patrimoniales_proj2_year_label: "Año:",
+patrimoniales_proj2_year: "2015",
+patrimoniales_proj2_desc: "Intervención de 2 casas patrimoniales que abarcan 330 m², las cuales se unen para formar el Museo de las Artesanías, conjugando sus amplios patios posteriores y áreas interiores para lograr un espacio no solo de exposición, sino también de espacio abierto para eventos. Se reconstruyó totalmente las cubiertas, se reformuló nuevos materiales compatibles con la infraestructura existente como el gres en pisos y se respetó completamente la morfología que conservaban los muros. Se pudo trabajar con tecnologías ancestrales como muros de tapiales, adobones y paredes en bahareque.",
+
+patrimoniales_proj3_title: "Proyecto Recoleta",
+patrimoniales_proj3_location: "📍 Centro Histórico de Quito - Ecuador",
+patrimoniales_proj3_status_label: "Estado:",
+patrimoniales_proj3_status: "Diseño Arquitectónico - Intervención Patrimonial",
+patrimoniales_proj3_year_label: "Año:",
+patrimoniales_proj3_year: "2010",
+patrimoniales_proj3_desc: "Intervención en inmueble patrimonial ubicado en el centro histórico de Quito, adaptando el espacio a nuevas unidades habitacionales sin perder su esencia. Esta casa mide cerca de 800 m² de construcción, data del siglo XVIII y en su momento era considerada el predio patrimonial particular más grande del centro de Quito. El rediseño arquitectónico interior priorizó dividir la vivienda en 6 unidades habitacionales donde la familia propietaria pueda acoger a sus parientes y generar futuros ingresos con espacios para renta. Dentro de la etapa constructiva se optó por intervenir de forma delicada, pero transformando cada uno de los espacios más emergentes, conservando sus detalles originales.",
+
+cap_arch_title: "Diseño Arquitectónico Estratégico",
+
 
 cap_arch_title: "Diseño Arquitectónico Estratégico",
 cap_arch_text: "Desarrollo de proyectos residenciales y comerciales optimizados en normativa, eficiencia constructiva y rentabilidad.",
@@ -258,6 +282,30 @@ consult_style: "Consultar este estilo",
     line_pat_text: "Enhancing historic assets with technical criteria and urban coherence.",
 
     line_cta: "Explore projects",
+
+    patrimoniales_proj1_title: "José Julián Andrade School Theater",
+patrimoniales_proj1_location: "📍 San Gabriel - Carchi, Ecuador",
+patrimoniales_proj1_status_label: "Status:",
+patrimoniales_proj1_status: "Architectural and Engineering Design Consulting",
+patrimoniales_proj1_year_label: "Year:",
+patrimoniales_proj1_year: "2018",
+patrimoniales_proj1_desc: "This project focused on developing a complete architectural and engineering proposal, covering every detail required to rehabilitate the theater as a whole. As it is a public-use space, the proposal aimed to improve materials, furniture quality, and basic equipment such as stage rigging, creating the basis for reopening the venue and diversifying its uses for both the school and the city. The acoustic proposal is reflected in every detail, including wall cladding, seating, flooring, and ceilings. Lighting was also introduced as a key comfort element, which the theater currently lacks entirely.",
+
+patrimoniales_proj2_title: "Museum of Handicrafts",
+patrimoniales_proj2_location: "📍 San Gabriel - Carchi, Ecuador",
+patrimoniales_proj2_status_label: "Status:",
+patrimoniales_proj2_status: "Heritage Restoration and Rehabilitation",
+patrimoniales_proj2_year_label: "Year:",
+patrimoniales_proj2_year: "2015",
+patrimoniales_proj2_desc: "This intervention involved two heritage houses totaling 330 m², which were joined to create the Museum of Handicrafts, combining their large rear courtyards and interior areas to achieve not only an exhibition space but also an open area for events. The roofs were fully rebuilt, new materials compatible with the existing structure were introduced, such as stoneware flooring, and the original morphology of the walls was fully respected. Traditional construction techniques such as rammed earth walls, adobe blocks, and bahareque walls were also preserved and incorporated.",
+
+patrimoniales_proj3_title: "Recoleta Project",
+patrimoniales_proj3_location: "📍 Quito Historic Center - Ecuador",
+patrimoniales_proj3_status_label: "Status:",
+patrimoniales_proj3_status: "Architectural Design - Heritage Intervention",
+patrimoniales_proj3_year_label: "Year:",
+patrimoniales_proj3_year: "2010",
+patrimoniales_proj3_desc: "Intervention in a heritage property located in Quito’s historic center, adapting the space into new housing units without losing its essence. This house has nearly 800 m² of built area, dates back to the 18th century, and at one point was considered the largest privately owned heritage property in downtown Quito. The interior architectural redesign prioritized dividing the house into six housing units so the owning family could accommodate relatives and generate future income through rental spaces. During the construction phase, the intervention was carried out carefully, transforming the most critical spaces while preserving the original details.",
     cap_title: "Technical Capabilities and Real Estate Development",
 cap_text: "Strategic integration between architectural design, technical management and real estate development.",
 
@@ -363,9 +411,19 @@ function applyLang(lang){
   });
 }
 
-langES?.addEventListener("click", () => applyLang("es"));
-langEN?.addEventListener("click", () => applyLang("en"));
-applyLang("es");
+const savedLang = localStorage.getItem("lang") || "es";
+
+langES?.addEventListener("click", () => {
+  localStorage.setItem("lang", "es");
+  applyLang("es");
+});
+
+langEN?.addEventListener("click", () => {
+  localStorage.setItem("lang", "en");
+  applyLang("en");
+});
+
+applyLang(savedLang);
 
 // =============================
 // Contact form behavior (practical)
