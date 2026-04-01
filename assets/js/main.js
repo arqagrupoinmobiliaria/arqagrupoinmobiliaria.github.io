@@ -411,9 +411,19 @@ function applyLang(lang){
   });
 }
 
-langES?.addEventListener("click", () => applyLang("es"));
-langEN?.addEventListener("click", () => applyLang("en"));
-applyLang("es");
+const savedLang = localStorage.getItem("lang") || "es";
+
+langES?.addEventListener("click", () => {
+  localStorage.setItem("lang", "es");
+  applyLang("es");
+});
+
+langEN?.addEventListener("click", () => {
+  localStorage.setItem("lang", "en");
+  applyLang("en");
+});
+
+applyLang(savedLang);
 
 // =============================
 // Contact form behavior (practical)
