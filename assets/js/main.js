@@ -243,7 +243,19 @@ style_rustic: "Estilo Rústico",
 consult_style: "Consultar este estilo",
     
   },
+const savedLang = localStorage.getItem("lang") || "es";
 
+langES?.addEventListener("click", () => {
+  localStorage.setItem("lang", "es");
+  applyLang("es");
+});
+
+langEN?.addEventListener("click", () => {
+  localStorage.setItem("lang", "en");
+  applyLang("en");
+});
+
+applyLang(savedLang);
   en: {
     tagline: "Urban Vision & Strategic Development",
 
@@ -391,6 +403,19 @@ style_rustic: "Rustic Style",
 consult_style: "Explore this style",
   }
 };
+const savedLang = localStorage.getItem("lang") || "es";
+
+langES?.addEventListener("click", () => {
+  localStorage.setItem("lang", "es");
+  applyLang("es");
+});
+
+langEN?.addEventListener("click", () => {
+  localStorage.setItem("lang", "en");
+  applyLang("en");
+});
+
+applyLang(savedLang);
 const dict= I18N;
 
 let currentLang = "es";
