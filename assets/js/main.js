@@ -21,7 +21,8 @@ if (header) {
   window.addEventListener("scroll", onScrollHeader);
   onScrollHeader();
 }
-
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 // =============================
 // Mobile nav toggle
 // =============================
@@ -108,8 +109,10 @@ function stopAuto(){
   sliderTimer = null;
 }
 
-renderSlides();
-startAuto();
+if (slidesEl && dotsEl) {
+  renderSlides();
+  startAuto();
+}
 
 // =============================
 // i18n (ES/EN) - practical bilingual
@@ -243,19 +246,7 @@ style_rustic: "Estilo Rústico",
 consult_style: "Consultar este estilo",
     
   },
-const savedLang = localStorage.getItem("lang") || "es";
 
-langES?.addEventListener("click", () => {
-  localStorage.setItem("lang", "es");
-  applyLang("es");
-});
-
-langEN?.addEventListener("click", () => {
-  localStorage.setItem("lang", "en");
-  applyLang("en");
-});
-
-applyLang(savedLang);
   en: {
     tagline: "Urban Vision & Strategic Development",
 
