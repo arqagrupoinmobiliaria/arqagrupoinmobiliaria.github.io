@@ -295,7 +295,7 @@ applyLang(savedLang);
 
     line_cta: "Explore projects",
 
-    patrimoniales_proj1_title: "José Julián Andrade School Theater",
+patrimoniales_proj1_title: "José Julián Andrade School Theater",
 patrimoniales_proj1_location: "📍 San Gabriel - Carchi, Ecuador",
 patrimoniales_proj1_status_label: "Status:",
 patrimoniales_proj1_status: "Architectural and Engineering Design Consulting",
@@ -403,19 +403,7 @@ style_rustic: "Rustic Style",
 consult_style: "Explore this style",
   }
 };
-const savedLang = localStorage.getItem("lang") || "es";
 
-langES?.addEventListener("click", () => {
-  localStorage.setItem("lang", "es");
-  applyLang("es");
-});
-
-langEN?.addEventListener("click", () => {
-  localStorage.setItem("lang", "en");
-  applyLang("en");
-});
-
-applyLang(savedLang);
 const dict= I18N;
 
 let currentLang = "es";
